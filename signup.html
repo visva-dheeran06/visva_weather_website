@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration or Sign Up form in HTML CSS | CodingLab </title> 
+    <link rel="stylesheet" href="/css/signup.css">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form id="login-form">
+      <div class="input-box">
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your email" required>
+      </div>
+      <div class="container">
+        <form class="form" onsubmit="validateForm(event)">
+          <div class="input-box">
+            <label id="PasswordLabel">Password</label></br>
+            <input name="Password" id="Password" type="password" placeholder="Password" onkeyup='passConfirm();' />
+          </div>
+          <div class="input-box">
+            <label id="ConfirmPswdLabel">Confirm Password</label></br>
+            <input type="password" placeholder="Confirm Password" id="ConfirmPassword" onkeyup='passConfirm();' />
+          </div>
+          <span id="Message"></span>
+        </form>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+      <input type="Submit" value="Register Now">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="login.html">Login now</a></h3>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
